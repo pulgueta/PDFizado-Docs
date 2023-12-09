@@ -18,6 +18,11 @@ const { title, description, content } = Astro.props
             content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=5, viewport-fit=cover, user-scalable=yes"
         />
         <meta name="application-name" content={content} />
+        <meta
+            name="theme-color"
+            media="(prefers-color-scheme: dark)"
+            content="#1C1917"
+        />
         <link rel="author" href="https://www.linkedin.com/in/and-rodr/" />
         <meta name="author" content="Andrés Rodríguez" />
         <meta name="creator" content="Andrés Rodríguez" />
