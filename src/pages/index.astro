@@ -1,5 +1,5 @@
 ---
-import { Image } from 'astro:assets'
+import { Picture } from 'astro:assets'
 
 import Layout from '../layouts/Layout.astro'
 ---
@@ -40,9 +40,10 @@ import Layout from '../layouts/Layout.astro'
                 et optio a praesentium quos.
             </p>
 
-            <Image
+            <Picture
                 src="https://images.ctfassets.net/fzn2n1nzq965/3AGidihOJl4nH9D1vDjM84/9540155d584be52fc54c443b6efa4ae6/homepage.png?q=80"
                 alt="Alt"
+                formats={['avif', 'webp']}
                 width="2048"
                 height="1024"
                 class="rounded shadow my-4"
