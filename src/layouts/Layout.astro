@@ -3,9 +3,10 @@ interface Props {
     title: string
     description: string
     content: string
+    canonical: `/${string}`
 }
 
-const { title, description, content } = Astro.props
+const { title, description, content, canonical } = Astro.props
 ---
 
 <!doctype html>
@@ -23,16 +24,16 @@ const { title, description, content } = Astro.props
             media="(prefers-color-scheme: dark)"
             content="#1C1917"
         />
-        <link rel="author" href="https://www.linkedin.com/in/and-rodr/" />
         <meta name="author" content="Andrés Rodríguez" />
         <meta name="creator" content="Andrés Rodríguez" />
         <meta name="publisher" content="Andrés Rodríguez" />
         <meta name="robots" content="index, follow, nocache" />
         <meta name="googlebot" content="index, follow" />
+        <link rel="author" href="https://www.linkedin.com/in/and-rodr/" />
         <link rel="manifest" href="/manifest.webmanifest" />
-        <link rel="canonical" href="https://docs.pdfizado.com/" />
+        <link rel="canonical" href=`https://docs.pdfizado.com${canonical}` />
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-        <title>{title}</title>
+        <title>{`PDFizado | ${title}`}</title>
     </head>
     <body class="p-2 bg-[#1C1917] text-white">
         <slot />
