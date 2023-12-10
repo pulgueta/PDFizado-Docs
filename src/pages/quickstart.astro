@@ -1,5 +1,8 @@
 ---
+import { Picture } from 'astro:assets'
+
 import Layout from '../layouts/Layout.astro'
+import Typography from '../components/Typography.astro'
 ---
 
 <Layout
@@ -21,15 +24,55 @@ import Layout from '../layouts/Layout.astro'
             <a href="/" class="hover:underline">Volver</a>
 
             <h2 class="scroll-m-20 text-3xl font-bold tracking-tight my-4">
-                Cómo usar PDFizado
+                Primeros pasos
             </h2>
 
-            <p class="text-white/80 leading-6">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Quaerat dolorum amet beatae ipsam doloribus iste eveniet quod
-                porro suscipit, repudiandae eius tempora, nostrum, quis quisquam
-                sed corrupti eligendi. Eos, consequuntur.
-            </p>
+            <Typography>
+                Primero, entrar a la página principal de <a
+                    href="https://pdfizado.com"
+                    target="_blank"
+                    class="font-bold">PDFizado</a
+                > y hacer clic en "Crear cuenta"
+            </Typography>
+
+            <Picture
+                src="/images/create-account.png"
+                alt="Primer paso para utilizar PDFizado"
+                formats={['avif', 'webp']}
+                width="960"
+                height="80"
+                class="rounded shadow my-4 mx-auto"
+            />
+
+            <Typography>
+                Luego, completar el formulario con nuestra información
+                correspondiente:
+            </Typography>
+
+            <Picture
+                src="/images/register.png"
+                alt="Formulario de registro de PDFizado"
+                formats={['avif', 'webp']}
+                width="1024"
+                height="760"
+                class="rounded shadow my-4 mx-auto"
+            />
+
+            <Typography>
+                Una vez completada la información y enviada, debemos dirigirnos
+                al correo electrónico que utilizamos para registranos y
+                verificar nuestra cuenta haciendo clic en el botón que se nos
+                indica:
+            </Typography>
+
+            <Picture
+                src="/images/verify-account.png"
+                alt="Verificación de cuenta"
+                formats={['avif', 'webp']}
+                width="620"
+                height="630"
+                class="rounded shadow my-4 mx-auto"
+            />
         </div>
     </main>
 </Layout>
