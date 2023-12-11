@@ -3,6 +3,7 @@ import { Picture } from 'astro:assets'
 
 import Layout from '../layouts/Layout.astro'
 import Typography from '../components/Typography.astro'
+import Header from '../components/Header.astro'
 ---
 
 <Layout
@@ -12,19 +13,9 @@ import Typography from '../components/Typography.astro'
     canonical="/"
 >
     <main class="max-w-5xl mx-auto p-4 rounded">
-        <h1 class="scroll-m-20 text-4xl font-extrabold tracking-tight mb-2">
-            Documentación de PDFizado
-        </h1>
-        <p class="text-white/50 font-medium mb-4 text-sm">
-            Guía hecha por Andrés Rodríguez
-        </p>
-        <hr class="border-white/20" />
+        <Header title="Guía de inicio rápido" />
 
         <div class="my-4 max-w-4xl mx-auto rounded">
-            <h2 class="scroll-m-20 text-3xl font-bold tracking-tight">
-                Cómo usar PDFizado
-            </h2>
-
             <Typography className="my-4">
                 En esta breve guía vas a poder comprender cómo utilizar <a
                     target="_blank"
