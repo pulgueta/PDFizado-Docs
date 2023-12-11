@@ -9,4 +9,4 @@ Allow: /sitemap.xml
 
 Crawl-delay: 5 
 
-Sitemap: https://docs.pdfizado.com/sitemap.xml
+Sitemap: https://docs.pdfizado.com/sitemap-index.xml
