@@ -1,0 +1,21 @@
+---
+import { Picture } from 'astro:assets'
+
+interface Props {
+    src: `/images/${string}`
+    alt: string
+    width: number | `${number}`
+    height: number | `${number}`
+}
+
+const { src, alt, height, width } = Astro.props
+---
+
+<Picture
+    src={src}
+    alt={alt}
+    formats={['avif', 'webp']}
+    width={width}
+    height={height}
+    class="rounded shadow my-8 mx-auto"
+/>

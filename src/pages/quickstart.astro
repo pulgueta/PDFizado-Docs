@@ -1,8 +1,7 @@
 ---
-import { Picture } from 'astro:assets'
-
 import Layout from '../layouts/Layout.astro'
 import Typography from '../components/Typography.astro'
+import DocImage from '../components/DocImage.astro'
 ---
 
 <Layout
@@ -23,11 +22,7 @@ import Typography from '../components/Typography.astro'
         <div class="my-4 max-w-4xl mx-auto rounded">
             <a href="/" class="hover:underline">Volver</a>
 
-            <h2 class="scroll-m-20 text-3xl font-bold tracking-tight my-4">
-                Primeros pasos
-            </h2>
-
-            <Typography>
+            <Typography className="mt-8">
                 Primero, entrar a la página principal de <a
                     href="https://pdfizado.com"
                     target="_blank"
@@ -35,13 +30,11 @@ import Typography from '../components/Typography.astro'
                 > y hacer clic en "Crear cuenta"
             </Typography>
 
-            <Picture
+            <DocImage
                 src="/images/create-account.png"
                 alt="Primer paso para utilizar PDFizado"
-                formats={['avif', 'webp']}
                 width="960"
                 height="80"
-                class="rounded shadow my-4 mx-auto"
             />
 
             <Typography>
@@ -49,13 +42,11 @@ import Typography from '../components/Typography.astro'
                 correspondiente:
             </Typography>
 
-            <Picture
+            <DocImage
                 src="/images/register.png"
                 alt="Formulario de registro de PDFizado"
-                formats={['avif', 'webp']}
                 width="1024"
-                height="760"
-                class="rounded shadow my-4 mx-auto"
+                height="768"
             />
 
             <Typography>
@@ -65,13 +56,47 @@ import Typography from '../components/Typography.astro'
                 indica:
             </Typography>
 
-            <Picture
+            <DocImage
                 src="/images/verify-account.png"
                 alt="Verificación de cuenta"
-                formats={['avif', 'webp']}
                 width="620"
                 height="630"
-                class="rounded shadow my-4 mx-auto"
+            />
+
+            <Typography>
+                Una vez verificada la cuenta, veremos este aviso en el que
+                deberemos iniciar sesión
+            </Typography>
+
+            <DocImage
+                src="/images/verified.png"
+                alt="Verificación de cuenta"
+                width="640"
+                height="180"
+            />
+
+            <Typography>
+                Proveemos nuestra información previamente registrada para poder
+                iniciar sesión.
+            </Typography>
+
+            <DocImage
+                src="/images/login.png"
+                alt="Formulario de inicio de sesión de PDFizado"
+                width="1024"
+                height="768"
+            />
+
+            <Typography>
+                Al autenticarnos, seremos redirigidos a nuestro Dashboard por
+                primera vez y se verá de esta forma:
+            </Typography>
+
+            <DocImage
+                src="/images/dashboard.png"
+                alt="Dashboard de PDFizado"
+                width="1024"
+                height="768"
             />
         </div>
     </main>
